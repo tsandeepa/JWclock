@@ -23,7 +23,7 @@ body, html{
 
 #jClock{
     font-family: 'rb-medium', sans-serif;
-
+    line-height: 1;
     color: #fff;
     font-size: 100px;
 }
@@ -37,7 +37,7 @@ body, html{
 }
 
 .d-show{
-    padding: 58px 90px;
+    padding: 70px 90px;
     position: relative;
     z-index: 1;
 }
@@ -62,4 +62,32 @@ body, html{
 
 .wlecome-text img{
     width: 60%;
+}
+
+
+@media only screen and (max-width: 1238px) {
+    .d-show{
+        zoom: 0.8;
+        padding: 82px 35px;
+    }
+  }
+
+
+@media only screen and (max-width: 890px) {
+    .d-show{
+        zoom: 0.5;
+        padding: 90px 35px;
+    }
+    .wlecome-text{
+        padding: 36px 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .d-show{
+        zoom: 0.4;
+    }
+    .wlecome-text {
+        padding: 26px 0;
+    }
 }
